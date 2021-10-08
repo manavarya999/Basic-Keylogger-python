@@ -1,13 +1,18 @@
 import smtplib, ssl  
+
+
 class send_mail:
         
     def sendEmail(message):
         smtp_server = "smtp.gmail.com"
         port = 587
-        sender_email = "email id required"           #Put sender and receiver email the same for testing
-        password = "enter passwrord"               #Put password of the sender's email id
+        # use same email for sender and receiver while testing
+        sender_email = "email-id-required"
         receiver_email = "enter-receiver-email-id"
         
+        # password of the sender's email id
+        password = "enter password"
+
         context = ssl.create_default_context()
 
         try:
@@ -17,9 +22,9 @@ class send_mail:
             server.ehlo()
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message)
-        
+            
         except Exception as e:
             print("ERROR DETECTED",e)
         finally:
-            print("failure")
+            print("closing connection")
             server.quit()
