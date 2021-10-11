@@ -6,13 +6,12 @@ class send_mail:
     def sendEmail(message):
         smtp_server = "smtp.gmail.com"
         port = 587
-        # use same email for sender and receiver while testing
-        sender_email = "email-id-required"
+
+        sender_email = "Email id required"           #Put sender and receiver email the same for testing
+        password = "Enter password"                  #Put password of the sender's email id
         receiver_email = "enter-receiver-email-id"
         
-        # password of the sender's email id
-        password = "enter password"
-
+        
         context = ssl.create_default_context()
 
         try:
