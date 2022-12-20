@@ -14,7 +14,7 @@ Legitimate uses do exist for keyloggers. Parents can monitor their children’s 
 4) Open command prompt/terminal and navigate to the keylogger directory that you have downloaded.
 5) Type "python keyl0gger.py" and the program will start capturing the keystrokes and will be send to the provided email id.
 
-# If it's not working
+# What if it's not working?
 
 If the keystrokes are not being sent to your provided email id then make sure to turn on the "allow less secure apps" (maybe different for other than google accounts) settings in your account.
 
